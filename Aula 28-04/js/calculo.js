@@ -21,3 +21,15 @@ function dividir(){
         resultado.innerHTML = Number(n1.value)/ Number(n2.value);
     }
 }
+function triangulo(){
+    resultado.innerHTML = (Number(n1.value) * Number(n2.value))/2;
+}
+function quadrado(){
+    resultado.innerHTML = (Number(n1.value) * Number(n2.value));
+}
+var idade = document.querySelector('#idade');
+function verificar(){
+    if(Number(idade.value)<18){
+        
+    }
+}
