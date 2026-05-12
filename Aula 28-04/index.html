@@ -3,23 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Minha Calculadora</title>
 </head>
 <script src="js/calculo.js"></script>
 <body>
     <h1>Minha Calculadora</h1>
-    Primeiro Número(Base do triangulo) <br>
-    <input type="number" id="n1"><br>
-    Segundo Número(Altura do triangulo) <br>
-    <input type="number" id="n2"> <br> <br>
-    <button onclick="somar()">Somar</button>
-    <button onclick="subtrair()">Subtrair</button>
-    <button onclick="multiplicar()">Multiplicar</button>
+    <table border="1">
+        <tr>
+            <th>Primeiro Número(Base do triangulo) <br>
+    <input type="number" id="n1"></th>
+                <th>
+                    Segundo Número(Altura do triangulo) <br>
+    <input type="number" id="n2">
+                </th>
+        </tr>
+        <tr>
+            <td><button onclick="somar()">Somar</button></td>
+            <td><button onclick="subtrair()">Subtrair</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="multiplicar()">Multiplicar</button></td>
+        </tr>
+    </table>
+    <br>
+     <br> <br>
+    
+    
+    
     <button onclick="dividir()">Dividir</button>
     <button onclick="triangulo()">Triângulo</button>
     <button onclick="quadrado()">Quadrado</button>
     <br>
-    O resultado é <span id="resultado"></span>
+    <h3>Modificar o primeiro número</h3>
+    <button onclick="dez()">-10%</button>
+    <button onclick="quinze()">+15%</button>
+    <button onclick="tres()">-3%</button>
+    <button onclick="imposto()">Imposto de Renda</button>
+    <br>O resultado é <span id="resultado"></span>
     
 
     <h1>Verificação de Idade</h1>

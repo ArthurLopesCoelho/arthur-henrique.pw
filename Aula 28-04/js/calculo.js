@@ -49,3 +49,25 @@ function par_impar(){
         }
     
 }
+function dez(){
+    resultado.innerHTML = Number(n1.value) * 0.9;
+}
+function quinze(){
+    resultado.innerHTML = Number(n1.value) * 1.15;
+}
+function tres(){
+    resultado.innerHTML = Number(n1.value) * 0.97;
+}
+function imposto(){
+    if(Number(n1.value) >1000){
+        resultado.innerHTML=Number(n1.value)*0.93;
+    }
+    else if(Number(n1.value)<=500){
+        if(Number(n1.value)>200){
+            resultado.innerHTML=Number(n1.value)*1.05;}
+        else{
+            resultado.innerHTML=Number(n1.value)*1.05+" Boa compra!";
+        }
+    }
+    
+}
