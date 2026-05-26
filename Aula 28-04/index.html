@@ -9,6 +9,7 @@
 <script src="js/calculo.js"></script>
 <body>
     <h1>Minha Calculadora</h1>
+    <center>
     <table border="1">
         <tr>
             <th>Primeiro Número(Base do triangulo) <br>
@@ -24,24 +25,32 @@
         </tr>
         <tr>
             <td><button onclick="multiplicar()">Multiplicar</button></td>
+            <td><button onclick="dividir()">Dividir</button></td>
         </tr>
-    </table>
-    <br>
-     <br> <br>
-    
-    
-    
-    <button onclick="dividir()">Dividir</button>
-    <button onclick="triangulo()">Triângulo</button>
-    <button onclick="quadrado()">Quadrado</button>
-    <br>
-    <h3>Modificar o primeiro número</h3>
-    <button onclick="dez()">-10%</button>
-    <button onclick="quinze()">+15%</button>
-    <button onclick="tres()">-3%</button>
-    <button onclick="imposto()">Imposto de Renda</button>
-    <br>O resultado é <span id="resultado"></span>
-    
+        <tr>
+             <td><button onclick="triangulo()">Triângulo</button></td>
+        
+        <td>
+            <button onclick="quadrado()">Quadrado</button></td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                Modificar o primeiro número
+            </th>
+        </tr>
+        <tr>
+            <td> <button onclick="dez()">-10%</button></td>
+            <td><button onclick="quinze()">+15%</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="tres()">-3%</button></td>
+            <td><button onclick="imposto()">Imposto de Renda</button></td>
+        </tr>
+        <tr>
+            <th>O resultado é </th>
+            <th><span id="resultado"></span></th>
+        </tr>
+    </table></center>
 
     <h1>Verificação de Idade</h1>
     Digite sua Idade<br>
