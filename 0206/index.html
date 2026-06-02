@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<script src="/script/script.js"></script>
+<body>
+    <div class="titulo">
+        Lojinha do Teuzz
+    </div>
+    <div class="tabela">
+    <table border="1">
+        <tr>
+            <th>Imagem</th>
+            <th>Produto</th>
+            <th>Preço Unitário</th>
+            <th>Qtd</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td><img src="https://d296pbmv9m7g8v.cloudfront.net/Custom/Content/Products/10/56/1056729_celular-samsung-galaxy-a53-5g-128gb-10008262_m6_638010765487205468.webp" alt="Imagem não encontrada"></td>
+            <td><p>Celular Samsung Galaxy A53 5G 128gb</p>
+            <p>Código 01</p>
+        <p>Cor bege</p></td>
+        <td>
+            3.600
+        </td>
+        <td>
+            <button class="botãomais" onclick="mais(0)">+</button>
+            <span id="qtd1">0</span>
+            <button class="botãomenos" onclick="menos(0)">-</button>
+        </td>
+        <td>
+            <span id="Total1">0</span>
+        </td>
+        </tr>
+        <tr>
+            <td><img src="https://images.tcdn.com.br/img/img_prod/1361945/90_televiso_smart_uhd_4k_58_hisense_a6_preto_entrada_2_20251216172949_185de0968d96.jpg" alt="Imagem não encontrada"></td>
+            <td><p>Televisão Smart UHD 4K 58" HISENSE A6 Preto, Entrada HDMI E Wi-fi - 58A6NV</p>
+            <p>Código 02</p>
+        <p>Cor Preto</p></td>
+        <td>
+            2.000
+        </td>
+        <td>
+            <button class="botãomais" onclick="mais(1)">+</button>
+            <span id="qtd2">0</span>
+            <button class="botãomenos" onclick="menos(1)">-</button>
+        </td>
+        <td>
+            <span id="Total2">0</span>
+        </td>
+        </tr>
+        <tr>
+            <td><img src="data:image/webp;base64,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" alt="Imagem não encontrada"></td>
+            <td><p>Notebook Dell 15</p>
+            <p>Código 03</p>
+        <p>Cor Cinza</p></td>
+        <td>
+            3.700
+        </td>
+        <td>
+            <button class="botãomais" onclick="mais(2)">+</button>
+            <span id="qtd3">0</span>
+            <button class="botãomenos" onclick="menos(2)">-</button>
+        </td>
+        <td>
+            <span id="Total3">0</span>
+        </td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
