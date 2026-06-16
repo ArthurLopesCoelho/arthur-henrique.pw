@@ -1,0 +1,35 @@
+body{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+.tabela{
+    justify-content: center;
+    display: flex;
+}
+table{
+    background-color: white;
+    border-collapse: collapse;
+}
+th{
+    background-color: rgb(201, 201, 201)
+}
+header{
+    justify-content: center;
+    display: flex;
+}
+.botãomais{
+    background-color: lightgreen;
+}
+.botãomenos{
+    background-color: rgb(255, 69, 69);
+}
+table tr td,th{
+    text-align: center;
+    border: solid 0.06cm;
+}
+img{
+    height: 300px;
+    width: 300px;
+}
