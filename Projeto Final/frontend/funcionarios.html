@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários - Sistema RH</title>
+    <link rel="stylesheet" href="funcionarios.css">
+    <script>
+    if (localStorage.getItem('logado') !== 'true') {
+        window.location.href = 'login.html';
+    }
+</script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Sistema RH</h1>
+            <p>Gerenciamento de funcionários</p>
+        </header>
+
+        <div class="topo">
+            <h2>Funcionários</h2>
+            <button onclick="window.location.href='index.html'">
+                Voltar
+            </button>
+            <button onclick="window.location.href='cadastro.html'">
+                + Novo Funcionário
+            </button>
+        </div>
+
+        <div id="listaFuncionarios">
+            <p>Carregando funcionários...</p>
+        </div>
+    </div>
+
+    <script src="funcionarios.js"></script>
+</body>
+</html>

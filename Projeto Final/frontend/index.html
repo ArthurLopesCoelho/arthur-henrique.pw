@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema RH</title>
+
+    <script>
+    if (localStorage.getItem('logado') !== 'true') {
+        window.location.href = 'login.html';
+    }
+</script>
+</head>
+<body>
+    <div class="container">
+    <h1>Sistema RH</h1>
+    <p>Bem-vindo! Login realizado com sucesso.</p>
+
+    <button onclick="sair()">Sair</button>
+</div>
+
+<script>
+    function sair() {
+        localStorage.removeItem('logado');
+        window.location.href = 'login.html';
+    }
+</script>
+</body>
+</html>
